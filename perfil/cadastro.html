@@ -1,0 +1,386 @@
+<!DOCTYPE html><!--Aqui estou declarando um documento em HTML-->
+<html>
+<head><!--Define a cabeça do meu documento -->
+
+	<meta charset="UTF-8"><!--exibir uma página HTML corretamente, um navegador da web deve conhecer o conjunto de caracteres usado na página. -->
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/css/datepicker.css" rel="stylesheet" type="text/css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+	  <!--Links=permitem que os usuários cliquem para ir de uma página para outra.
+	  Href=O atributo href especifica o URL da página para a qual o link vai.-->
+	  <!--Script=é usada para incorporar um script do lado do cliente,elemento contém instruções de script ou aponta para um arquivo de script externo por meio do atributo src-->
+
+	<title>Cadastro</title><!--Aqui eu utilizei o titlle para colocar um título em minha página-->
+ 	
+	<style type="text/css">
+		.card-default 
+		{
+    		color: #333;
+    		background: linear-gradient(#fff,#ebebeb) repeat scroll 0 0 transparent;
+    		font-weight: 600;
+    		border-radius: 6px;
+		}
+
+		table 
+		{
+  			font-family: arial, sans-serif;
+  			border-collapse: collapse;
+  			width: 100%;
+		}
+
+		td, th 
+		{
+  			border: 0px solid #dddddd;
+  			text-align: left;
+ 			 padding: 8px;
+		}
+
+		tr:nth-child(even) 
+		{
+  			background-color: #F5F5F5;
+		}
+	</style> <!--CSS descreve como os elementos HTML devem ser exibidos na tela, no papel ou em outra mídia 
+             a tag <style>  é usada para definir informações de estilo (CSS) para um documento. Neste campo eu utilizei estilo para minha página, para a minha tabela-->
+</head>
+<body>
+    <script type="text/javascript">
+    	
+     $(function () {
+        $(".date").datepicker({
+            autoclose: true,
+            todayHighlight: true
+        });
+    });
+    </script>	
+
+<div class="container">
+<div id="accordion">
+    <div class="row"> <!--O atributo row especifica a altura visível de uma área de texto, em linhas.-->
+        <div class="col-lg-12">
+            <div class="text-center">
+                <h3>Faça o seu cadastro</h3>
+            </div>
+        </div>
+    </div>
+          
+        </div>
+        <div id="collapse2" class="collapse show">
+            <div class="card-body">
+                <div class="row"> 
+                    <div class="col-lg-12">
+                        <p>Olá Viajante! Neste campo você irá preencher todo o cadastro para sua mais nova experiência única de viajar sem gastar muito.</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 col-lg-4">
+                        <div class="form-group">
+                            <label class="control-label">Nome</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-4">
+                        <div class="form-group">
+                            <label class="control-label">Sobrenome</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-lg-4">
+                        <div class="form-group">
+                            <label class="control-label">CPF</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-2 col-lg-3">
+                        <div class="form-group">
+                            <label class="control-label">Data de Nascimento</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 col-lg-3">
+                        <div class="form-group">
+                            <label class="control-label">Nascionalidade</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-1">
+                        <div class="form-group">
+                            <label class="control-label">Estado</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+
+                     <div class="col-md-4 col-lg-3">
+                        <div class="form-group">
+                            <label class="control-label">Cidade</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-md-3 col-lg-3">
+                        <div class="form-group">
+                            <label class="control-label">Celular</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-lg-3">
+                        <div class="form-group">
+                            <label class="control-label">Telefone</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-3">
+                        <div class="form-group">
+                            <label class="control-label">E-mail</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4 col-lg-3">
+                        <div class="form-group">
+                            <label class="control-label">Escolaridade</label>
+                            <input type="text" class="phone form-control"/>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3">
+                        <div class="form-group">
+                            <label class="control-label">Idiomas (Opção 1)</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 col-lg-3">
+                        <div class="form-group">
+                            <label class="control-label">Idiomas (Opção 2)</label>
+                            <input type="text" class="form-control" />
+                        </div>
+                    </div>
+                
+                </div>
+
+<!--Usei a div da classe container para definir um bloco de código que eu iria  manipula em conjunto-->
+
+                <div class="row">
+                    <div class="col-lg-10"><!--Aqui espesifiquei o tamanho da minha tabela -->
+                        <label class="control-label">Marque aqui suas habilidades:</label>
+
+                        <table class="table"> <!--Criação de uma tabela-->
+                            <thead>
+                                <tr>
+                                    <th>
+                                    	Habildades
+                                    </th>
+                                    <th>
+                                       Execelente
+                                    </th>
+                                    <th>
+                                        Otimo
+                                    </th>
+
+                                    <th>
+                                       	Bom
+                                    </th>
+
+                                    <th>
+                                        Regular
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        Comunicação
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox"> <!--O <input type = "checkbox"> define uma caixa de seleção. -->
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Sociabilidade
+                                    </td>
+                                    <td>
+                                        <input type="checkbox">
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                     	Independência
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Formalidade
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Estabildade Emocional
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Automotivação
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                    <td>
+                                        <label class="control-label">
+                                            <input type="checkbox">
+                                        </label>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+
+                        </table> <!--Fechamento da minha tabela -->
+                        <label class="control-label"> Comentários (sinta-se à vontade para descrever um pouco de você):</label> <!--A <label>tag define um rótulo para vários elementos -->
+                        <textarea rows="6" class="form-control"></textarea><!--A tag <textarea> define um controle de entrada de texto de várias linhas. Utilizei para coletar comentários do usuário, -->
+                    </div>
+                </div>
+               
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+</div>
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="pull-right">
+            <a href="#" class="btn btn-success btn-lg" id="btnSubmit"><i class="fa fa-save"></i>Salvar</a>
+            <a class="btn btn-warning btn-lg" href="#" id="btnToTop"><i class="fa fa-arrow-up"></i> Top</a>
+        </div>
+    </div>
+</div>
+</div>
+	<!--Script -->
+   	<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.3.0/js/bootstrap-datepicker.js"></script>
+</body>
+</html>

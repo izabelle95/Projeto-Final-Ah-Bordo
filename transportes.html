@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <title>Ah Bordo</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Aqui eu ultilizei o bootstrap para fazer este codigo -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <!-- Nessa parte são as navbar para fazer o cabeçalho do codigo e me auxiliei usando o site
+    do bootstrap
+    https://getbootstrap.com
+   -->
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#">Ah Bordo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      <!-- Essas aqui soão as opçoes de uso do cliete onde tambem eu insere um botão  para facilitara navegação do cliente  -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <div class="form-inline">
+                <select class="form-control mx-2" required name='hour' onchange='this.form.()'>
+                  <option value="Selecione seu Destino"> destinos</option>
+                  <option value="Nordeste">Nordeste</option>
+                  <option value="Suldeste">Suldeste</option>
+                  <option value="Centro Oeste">Centro Oeste</option>
+                  <option value="Norte">Norte</option>
+                  <option value="Sul">Sul</option>
+                </select>
+                <select class="form-control mx-2" required name='hour' onchange='this.form.()'>
+                  <option value="Selecione seu Transporte"> Transportes</option>
+                  <option value="Rodoviario">Rodoviario</option>
+                  <option value="Aereo">Aereo</option>
+                  <option value="Maritimo">Maritimo</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+<!-- Aqui são as opçoes de serviço onde cada cliente que viajar conosco ira tambem nos ajudar. -->
+    <div class="container">
+
+      <div class="row mx-auto">
+
+        <div class="col-6 mt-4">
+
+          <div class="card mx-auto" style="width: 20rem;">
+            <div class="card-body">
+              <h4 class="card-title">Auxiliar de cantina</h4>
+              <p class="card-text">Trabalhe seis horas por dia e mais 150 pontos por dia  trabalhado</p>
+              <div class="form-group">
+                <label for="email">:</label>
+                <input type="email" id="email" name="email"placeholder="cofirme seu email"required ="email">
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary">Confirma</a>
+          </div>
+        </div>
+        <div class="col-6 mt-4">
+          <div class="card mx-auto" style="width: 20rem;">
+            <div class="card-body">
+              <h5 class="card-title">Limpeza em geral</h5>
+              <p class="card-text">Seis horas por dia 150 pontos por dia</p>
+              <div class="form-group">
+                <label for="email">:</label>
+                <input type="email" id="email" name="email"placeholder="cofirme seu email"required ="email">
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary">Confirma</a>
+          </div>
+        </div>
+        <div class="col-6 mt-4">
+          <div class="card mx-auto" style="width: 20rem;">
+            <div class="card-body">
+              <h6 class="card-title">Segurança</h6>
+              <p class="card-text">Seis horas por dia 150 pontos por dia</p>
+              <div class="form-group">
+                <label for="email">:</label>
+                <input type="email" id="email" name="email"placeholder="cofirme  seu email"required ="email">
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary">Confirma</a>
+          </div>
+        </div>
+
+        <div class="col-6 mt-4">
+          <div class="card mx-auto" style="width: 20rem;">
+            <div class="card-body">
+              <h7 class="card-title">Recepcionista</h7>
+              <p class="card-text">Seis horas por dia 350 pontos por dia</p>
+              <div class="form-group">
+                <label for="email">:</label>
+                <input type="email" id="email" name="email"placeholder="cofirme seu email"required ="email">
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary">Confirma</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Fim da pagina -->
+  </body>
+</html>

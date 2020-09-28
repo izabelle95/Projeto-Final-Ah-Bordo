@@ -1,0 +1,87 @@
+/* css personalizado */
+
+body 
+{
+	padding-top: 70px;   
+	background-color: purple;
+}
+h1
+{
+	color: blue;
+}
+p
+{
+	color: red;
+}
+
+
+#principal
+{
+	background-color: green;
+}
+#amarelo
+{
+	background-color: yellow; 
+	width:300px;
+	height:300px;
+	margin-top:0px;
+	margin-left:0px;
+}
+#vermelho
+{
+	background-color: red;
+	width:300px;
+	height:300px;
+	margin-left:320px;
+	margin-top:-315px;
+}
+#azul
+{
+	background-color: blue;
+	width:300px;
+	height:300px;
+	margin-top:10px;
+	margin-left:0px;
+}
+#preto
+{
+	background-color:black;
+	width:300px;
+	height:300px;
+	margin-top:-315px;
+	margin-left:320px;
+}
+#amarelinho
+{   
+	text-align:center;
+	background-color:pink;
+	width: 50%;
+	height: 50%;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+#amarelo2
+{
+	background-color: pink;
+	width: 100%;
+	height: 100%;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+.linhaCinza 
+{
+	background: gray;   
+}
+
+.linhaPersonalizada 
+{
+	background: red;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.bg-color-padding p
+{
+	padding: 15px;   
+}
